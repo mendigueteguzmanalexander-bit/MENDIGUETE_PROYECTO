@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mi web de prueba </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-style: italic;
+            font: bold 90%;
+            font-size: 15pt;
+            background-color: RGB(255, 0, 0);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            border: 4px dashed #f3f3fc;
+            /*borde completo */
+            border-radius: 26px;
+            margin-bottom: 60px;
+        }
+
+        button {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+            font-size: 100%;
+            font: bold 90%;
+        }
+
+        .video {
+            background: green;
+        }
+
+        .pedrito {
+            padding: 5px;
+            background-color: greenyellow;
+            border-top: 10px solid blue;
+            /*borde en la parte arriba */
+            border-bottom: 10px solid rgb(0, 200, 255);
+            /*borde en la parte abajo */
+            border-left: 10px solid rgb(255, 123, 0);
+            /*borde en la parte izquierdo */
+            border-right: 10px solid rgb(223, 9, 9);
+            /*borde en la parte derecha */
+            border-radius: 25px;
+            /*poner bordes redondos */
+        }
+
+        .condorito {
+            padding: 4px;
+            background: linear-gradient(135deg, #e61c59, #0b73f2);
+        }
+
+        .ALEX {
+            padding: 15px;
+            border-radius: 15px;
+            width: 800px;
+            height: auto;
+            font-weight: bold;
+            /*pone el texto en negrita*/
+
+        }
+        .google:hover{
+            width: 550px;/*animacion oaccion al pasar el cursor*/
+        }
+        .pedrito:hover{
+            background-color: aqua;
+            font-family: Helvetica;
+        }
+    </style>
+    <!--link rel="stylesheet" type="text/css" href="style.css" /-->
+    <!--script src="scripts/code.js" esta linea hace el llamado a un archivo externo-->
+    <script>
+        function speak() {
+            alert('Hola ')
+        }
+    </script>
+    <base href="">
+</head>
+
+<body>
+    <DIV>
+        <audio src="ole.mp3" CONTROLS>
+        </audio>
+    </DIV>
+
+    <header>
+        <h1>Mi Sitio Web en Texto</h1>
+        <p>Bienvenido a esta web que muestra estructuras css y javascript</p>
+    </header>
+    <DIV class="condorito">
+        <iframe src=" CONDORITO.pdf " width="800 " height="800 "> </iframe>
+        <!--object data="ruta/a/tu/documento.pdf " type="application/pdf " width="800 " 
+        height="600 ">   <p>Tu navegador no soporta la incrustación de PDF.</p>
+        </object-->
+    </DIV>
+
+
+    </**video autoplay controls loop>
+    <!source src="/videos/karolg.mp4 " type="video/mp4 ">
+        <!source src="/videos/karolg.mp4 " type="video/avi ">
+            <div>
+                <span id="text" style="background: rgb(131, 236, 142);width: 800px;">La final de la Copa Mundial de
+                    Fútbol de 2010 fue el partido final de la Copa del Mundo
+                    de dicho año, la 19.ª edición de la competición de la FIFA para selecciones nacionales de fútbol. El
+                    partido se jugó en el Soccer City de Johannesburgo, Sudáfrica, el 11 de julio de 2010, y lo
+                    disputaron los equipos de Países Bajos y España. En el certamen participaron el país anfitrión,
+                    Sudáfrica, y otras treinta y una selecciones surgidas de la fase de clasificación, organizada por
+                    las seis confederaciones de la FIFA. Los treinta y dos equipos compitieron en una fase de grupos, de
+                    la que dieciséis se clasificaron para la fase eliminatoria. De camino a la final, Países Bajos
+                    terminó primera del Grupo E, con tres victorias, tras las cuales derrotó a Eslovaquia en octavos de
+                    final, a Brasil en cuartos y a Uruguay en semifinales. España terminó primera del Grupo H, con dos
+                    victorias y una derrota, tras lo cual derrotó a Portugal en octavos de final, a Paraguay en cuartos
+                    y a Alemania en semifinales. La final se disputó ante 84 490 espectadores, con más de novecientos
+                    millones de telespectadores, y fue arbitrada por el inglés Howard Webb.</span>
+                <button onclick="speak()">presiona</button>
+
+                <script>
+                    function speak() {
+                        var text = document.getElementById('text').innerText;  // Obtener el valor del campo de texto
+                        var utterance = new SpeechSynthesisUtterance(text); // Crear un nuevo objeto SpeechSynthesisUtterance
+                        utterance.rate = 0.5;  // Establecer la velocidad de habla más baja
+                        speechSynthesis.speak(utterance);  // Hablar el texto
+                    }
+                </script>
+
+
+            </div>
+            <! /video** />
+            <DIv class="video">
+                <video CONTROLS width="800 " height="auto" AUTOPLAY>
+
+                    <source src="M.mp4" type="video/mp4 ">
+                    Your browser does not support the video tag.
+                </video>
+            </DIV>
+            <source src="/riso.mp4 " type="video/ogg ">
+            <br> <br>
+            <p>EJEMPLOS </p>
+
+            <!video autoplay SCR="karolg.mp4 " type="video/mp4 " controls>
+                <!img src=" fotos/escorpio.png " alt="SI NO SE VIERA " />
+                <! /video>
+                    <div style="background: rgb(226, 224, 224);padding: 20px;">
+                        <ul>
+                            <li>botón: <br><button class="pedrito" onclick="speak() ">haga clic ;; ejecutará </button>
+                            </li>
+                            <li>campo de texto (input): <br><input class="ALEX" type="text"
+                                    placeholder="campo de texto"></li>
+                            <li>imagen enlace: <br><a href="https://about.google/intl/es_ALL/around-the-globe/"><img
+                                        src="google.png" class="google" width="500px" alt=""></a></li><!--sirve para que una imagen sea una enlace-->
+                        </ul>
+
+
+
+                    </div>
+                    <div>
+                        <div class="game-main-obj has-game" id="gameMainObj">
+                            <iframe class="game-source-obj possible-plugin-container" id="gameSource"
+                                src="https://html5.gamedistribution.com/56da8a54fe204845b34ccff750d4a60b/?gd_sdk_referrer_url=https%3A%2F%2Fwww.isladejuegos.com%2Faventuras%2Ffireboy-and-watergirl-6-fairy-tales"
+                                name="gameSource" scrolling="no" height="600px" width="800px" frameborder="0"
+                                allowtransparency="true" allow="autoplay *; fullscreen *;"
+                                allowfullscreen="allowfullscreen"></iframe>
+
+
+                        </div>
+                    </div>
+</body>
+
+</html>
